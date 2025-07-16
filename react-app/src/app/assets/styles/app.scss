@@ -1,0 +1,95 @@
+@import "reset.scss";
+@import "vars.scss";
+
+body,
+button {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column;
+  position: relative;
+}
+
+.home {
+    .main-area {
+        margin-left: 300px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+
+
+    display: flex; 
+    flex-direction: column;
+    flex: 1 0 auto; 
+
+   
+}
+
+svg:focus {
+    outline: 2px solid blue; 
+}
+
+.selected  {
+    outline: 2px solid #000 !important;
+}
+
+.main-area {
+    position: relative;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    //min-height: 100vh;
+}
+
+.main-area__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    min-width: 1200px;
+}
+
+.main-area__content {
+    flex: 1 0 auto; 
+    margin-bottom: 15px;
+    min-width: 1200px;
+}
+
+.main-area__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  flex-shrink: 0; 
+}
+
+@import "./blocks//sidebar.scss";
+@import "./blocks//person-block.scss";
+@import "./blocks/modal.scss";
+@import "./blocks//form.scss";
+@import "./blocks/sort-area.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/file-upload-btn.scss";
+@import "./blocks/table.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/sceleton.scss";
+@import "media.scss";
+
+.captcha-block {
+  margin-bottom: 15px;
+}
+
+
+
